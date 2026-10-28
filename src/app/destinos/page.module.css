@@ -1,0 +1,45 @@
+.listaDestinos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.titulo {
+    font-size: 36px;
+    color: var(--cor-profunda);
+    margin-bottom: 10px;
+}
+
+.descricao {
+    font-size: 18px;
+    color: var(--cor-dos-textos);
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .listaDestinos {
+        grid-template-columns: 1fr;
+    }
+}
+
+.botaoDestinos {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 12px 24px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-profunda);
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.botaoDestinos:hover {
+    background-color: var(--cor-principal);
+    color: var(--cor-de-fundo);
+}
+
+.introducao {
+    min-height: 75vh;
+    text-align: center;
+}
